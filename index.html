@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Algoritmos</title>
+</head>
+<body>
+
+  <h1>JavaScript - Algoritmos</h1>
+
+<script>
+
+  /* Zezinho comprou um microcomputador para controlar o rendimento
+  diário de seu trabalho como pescador. Toda vez que ele traz um
+  peso de peixes maior que o estabelecido pelo regulamento de pesca
+  do estado de Santa Catarina, ele deve pagar multa, e a multa cobra
+  R$ 4,00 à cada 50kg. Zezinho precisa que você faça um
+  algoritmo que leia o peso de peixes e verifique se há excesso.
+  Se houver, o excesso e o valor da multa que Zezinho deverá pagar.
+  Caso contrário, deve mostrar uma mensagem que ele não deve pagar
+  nada. */
+
+   var valorDaMulta = 4.00;
+   var kgPorMulta = 50;
+
+   var rendimentoDiario = 30;
+   var valorFinalDaMulta = 0.00
+
+   if (rendimentoDiario < 50) {
+     console.log("Não precisa pagar nada, pois está abaixo de 50kg");
+   }
+
+   if (rendimentoDiario >= 50) {
+     valorFinalDaMulta += 4.00;
+   }
+
+   if (rendimentoDiario >= 100) {
+     valorFinalDaMulta += 4.00;
+   }
+
+   if (rendimentoDiario >= 150) {
+     valorFinalDaMulta += 4.00;
+   }
+
+   console.log("Valor da cobrança: " + valorFinalDaMulta);
+
+</script>
+  
+</body>
+</html>
